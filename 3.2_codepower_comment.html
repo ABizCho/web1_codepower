@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Code'power</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1><a href="3_codepower_index.html">Code' Power</a></h1>
+        <ol>
+            <li><a href="3.1_codepower_video.html" >비디오 삽입</a></li>
+            <li><a href="3.2_codepower_comment.html" >댓글기능 추가</a></li>
+            <li><a href="3.3_codepower_chatting.html" >채팅기능 추가</a></li>
+            <li><a href="3.4_codepower_visitorAnalyzer.html" >방문자 분석기</a></li>
+        </ol>
+        <h2>댓글기능 추가</h2>
+        <p style="margin-top:45px;">
+            일반적으로 웹사이트가 있으면, 가장 중요한 상호작용 수단인 댓글을 구현하는 것은 html만으로는 불가능하고 백엔드 기술과 데이터베이스를 활용해야한다.<br>
+            스팸 차단기능까지 고려하면 사실 이보다도 까다롭다.<br><br>이처럼 댓글 기능을 구현하는 것은 사실 아주아주 까다로운 작업이다. 하지만 남들이 만든 댓글을 우리 웹사이트에 포함시키면 직접 구현하지 않고도 댓글기능을 구현할 수 있다.<br>본 페이지에선 disqus라는 사이트의 댓글기능을 가져옴으로써 이를 구현해보겠다.<br>
+        </p>
+
+        <p>
+            <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://3-codepower.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
